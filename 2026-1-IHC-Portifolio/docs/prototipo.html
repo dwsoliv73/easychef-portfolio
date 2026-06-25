@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EasyChef — Protótipo revisado</title>
+<link href="reset.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+</head>
+<body class="prototype-page">
+<div class="easychef-proto" id="easychefProto">
+<div aria-label="Protótipo interativo do EasyChef" class="easychef-phone" role="application">
+<header class="ec-topbar">
+<div class="ec-topbar-side">
+<button aria-expanded="false" aria-label="Abrir menu" class="ec-icon-btn" id="ecHamburgerBtn" type="button">☰</button>
+<button aria-label="Voltar" class="ec-icon-btn ec-back-btn" hidden="" id="ecBackBtn" type="button">←</button>
+</div>
+<h3 class="ec-title" id="ecScreenTitle">EasyChef</h3>
+<button aria-label="Abrir notificações" class="ec-icon-btn ec-notification-btn" id="ecBellBtn" type="button">
+<span aria-hidden="true">●</span>
+<span class="ec-notification-badge" id="ecNotificationBadge">3</span>
+</button>
+</header>
+<aside aria-hidden="true" aria-label="Menu principal" class="ec-drawer" id="ecDrawer">
+<div class="ec-drawer-top">
+<div>
+<strong>Olá, Chef</strong>
+<small>O que vamos preparar?</small>
+</div>
+<button aria-label="Fechar menu" class="ec-drawer-close" id="ecDrawerClose" type="button">×</button>
+</div>
+<nav class="ec-drawer-nav">
+<button class="ec-drawer-item active" data-ec-view="feed" type="button"><span>Início</span><small>Feed e desafio atual</small></button>
+<button class="ec-drawer-item" data-ec-view="grupos" type="button"><span>Meus grupos</span><small>Desafios com amigos</small></button>
+<button class="ec-drawer-item" data-ec-view="receitas" type="button"><span>Receitas salvas</span><small>Itens para cozinhar depois</small></button>
+<button class="ec-drawer-item" data-ec-view="perfil" type="button"><span>Meu perfil</span><small>Progresso e conquistas</small></button>
+<button class="ec-drawer-item" data-ec-view="config" type="button"><span>Configurações</span><small>Preferências do aplicativo</small></button>
+<button class="ec-drawer-item" data-ec-view="ajuda" type="button"><span>Ajuda</span><small>Como usar o EasyChef</small></button>
+</nav>
+</aside>
+<button aria-label="Fechar menu" class="ec-backdrop" id="ecBackdrop" tabindex="-1" type="button"></button>
+<main class="ec-content" id="ecContent">
+<section class="ec-view active" data-ec-title="EasyChef" id="ecView-feed">
+<div class="ec-welcome-card">
+<div>
+<p class="ec-eyebrow">Boa noite</p>
+<h4>O que você quer cozinhar hoje?</h4>
+<p>Encontre uma receita compatível com seu tempo e experiência.</p>
+</div>
+<button class="ec-primary-btn" data-ec-view="actions" type="button">Escolher receita</button>
+</div>
+<article class="ec-group-card"><img alt="Duas pessoas preparando legumes para um desafio culinário" class="ec-challenge-image" loading="lazy" src="img/easychef/desafio-7-dias.jpg"/>
+<div class="ec-card-heading">
+<div>
+<p class="ec-eyebrow">Desafio em andamento</p>
+<h4>7 dias cozinhando</h4>
+</div>
+<span class="ec-status-chip">2 de 7</span>
+</div>
+<p class="ec-muted">Você preparou 2 receitas. Faltam 5 para concluir o desafio.</p>
+<div aria-label="29% do desafio concluído" class="ec-progress"><span style="width:29%"></span></div>
+<div class="ec-progress-meta"><span>29% concluído</span><span>Líder: 5 receitas</span></div>
+</article>
+<div class="ec-section-heading">
+<h4>Atividade dos amigos</h4>
+<button class="ec-text-btn" data-ec-view="grupos" type="button">Ver grupos</button>
+</div>
+<div class="ec-feed-list" id="ecFeedList">
+<article class="ec-post-card">
+<div class="ec-post-header">
+<img alt="Foto de perfil de Aline" class="ec-avatar" loading="lazy" src="img/easychef/avatar-aline.jpg"/>
+<div class="ec-post-main">
+<h4>Aline preparou Frango grelhado com legumes</h4>
+<small>Hoje, 18:45 · 35 min · Fácil</small>
+</div>
+</div><img alt="Frango grelhado com arroz e legumes" class="ec-post-photo" loading="lazy" src="img/easychef/frango-grelhado.jpg"/>
+<p>“Usei alho, limão e páprica. Ficou pronto em 35 minutos.”</p>
+<div class="ec-post-actions">
+<button data-ec-action="like" type="button">Curtir <span>14</span></button>
+<button data-ec-action="comment" type="button">Comentar <span>6</span></button>
+<button data-ec-view="post" type="button">Ver detalhes</button>
+<button data-ec-action="save" type="button">Salvar</button>
+</div>
+</article>
+<article class="ec-post-card">
+<div class="ec-post-header">
+<div class="ec-avatar ec-avatar-blue">TH</div>
+<div class="ec-post-main">
+<h4>Thomas preparou Peixe grelhado com salada</h4>
+<small>Ontem, 21:10 · 30 min · Iniciante</small>
+</div>
+</div><img alt="Filé de peixe grelhado acompanhado de salada" class="ec-post-photo" loading="lazy" src="img/easychef/peixe-grelhado.jpg"/>
+<p>“Ficou leve e foi mais fácil do que eu esperava.”</p>
+<div class="ec-post-actions">
+<button data-ec-action="like" type="button">Curtir <span>8</span></button>
+<button data-ec-action="comment" type="button">Comentar <span>2</span></button>
+<button data-ec-view="post" type="button">Ver detalhes</button>
+<button data-ec-action="save" type="button">Salvar</button>
+</div>
+</article>
+</div>
+</section>
+<section class="ec-view" data-ec-title="Notificações" id="ecView-notificacoes">
+<div class="ec-section-heading">
+<h4>Notificações</h4>
+<button class="ec-text-btn" id="ecMarkRead" type="button">Marcar como lidas</button>
+</div>
+<div class="ec-notification-list">
+<button class="ec-notification-item unread" data-ec-view="post" type="button"><strong>Aline comentou na sua receita</strong><small>“Vou testar essa troca de ingrediente.” · há 8 min</small></button>
+<button class="ec-notification-item unread" data-ec-view="grupos" type="button"><strong>Você avançou no desafio</strong><small>Agora são 2 de 7 receitas · há 1 h</small></button>
+<button class="ec-notification-item unread" data-ec-view="receitas" type="button"><strong>Nova sugestão para iniciantes</strong><small>Frango cremoso · ontem</small></button>
+</div>
+</section>
+<section class="ec-view" data-ec-title="Meus grupos" id="ecView-grupos">
+<div class="ec-section-heading"><h4>Meus grupos</h4><button class="ec-text-btn" data-ec-action="new-group" type="button">Criar grupo</button></div>
+<article class="ec-group-detail-card"><img alt="Amigos preparando uma refeição juntos" class="ec-group-media" loading="lazy" src="img/easychef/grupo-cozinha.jpg"/>
+<div class="ec-card-heading"><div><h4>Lindinhos</h4><p class="ec-muted">Cozinhar ao menos 3 vezes por semana</p></div><span class="ec-status-chip">4/6</span></div>
+<div class="ec-progress"><span style="width:67%"></span></div>
+<div class="ec-progress-meta"><span>4 participantes ativos</span><span>214 dias restantes</span></div>
+</article>
+<article class="ec-group-detail-card"><img alt="Frango grelhado com legumes representando o desafio Chef da Semana" class="ec-group-media" loading="lazy" src="img/easychef/chef-semana.jpg"/>
+<div class="ec-card-heading"><div><h4>Chef da Semana</h4><p class="ec-muted">Experimentar uma receita nova até domingo</p></div><span class="ec-status-chip">60%</span></div>
+<div class="ec-progress"><span style="width:60%"></span></div>
+<div class="ec-progress-meta"><span>Você: 3 receitas</span><span>18 dias restantes</span></div>
+</article>
+<article class="ec-group-detail-card"><img alt="Prato brasileiro com arroz, feijão e ovo representando refeições econômicas" class="ec-group-media" loading="lazy" src="img/easychef/prato-brasileiro.jpg"/>
+<div class="ec-card-heading"><div><h4>Cozinha de República</h4><p class="ec-muted">Planejar refeições econômicas em grupo</p></div><span class="ec-status-chip">1/4</span></div>
+<div class="ec-progress"><span style="width:25%"></span></div>
+<div class="ec-progress-meta"><span>Meta: 4 refeições</span><span>7 dias restantes</span></div>
+</article>
+</section>
+<section class="ec-view" data-ec-title="Receitas salvas" id="ecView-receitas">
+<div class="ec-section-heading"><h4>Receitas salvas</h4><button class="ec-text-btn" data-ec-view="buscar" type="button">Buscar mais</button></div>
+
+
+
+<button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-grelhado.jpg" data-recipe="Frango grelhado com legumes" type="button"><img alt="Frango grelhado com legumes servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-grelhado.jpg"/><span class="ec-recipe-copy"><strong>Frango grelhado com legumes</strong><small>35 min · Fácil · Alto teor de proteína</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-cremoso.jpg" data-recipe="Frango cremoso" type="button"><img alt="Frango cremoso servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-cremoso.jpg"/><span class="ec-recipe-copy"><strong>Frango cremoso</strong><small>40 min · Fácil · 4 porções</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/prato-brasileiro.jpg" data-recipe="Prato brasileiro completo" type="button"><img alt="Prato brasileiro completo servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/prato-brasileiro.jpg"/><span class="ec-recipe-copy"><strong>Prato brasileiro completo</strong><small>45 min · Iniciante · Baixo custo</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button></section>
+<section class="ec-view" data-ec-title="Meu perfil" id="ecView-perfil">
+<div class="ec-profile-card">
+<img alt="Foto de perfil do usuário Chef Easy" class="ec-profile-avatar" loading="lazy" src="img/easychef/avatar-chef.jpg"/>
+<div><h4>Chef Easy</h4><p class="ec-muted">Cozinhando com mais constância</p></div>
+</div>
+<div class="ec-stat-grid">
+<div><strong>12</strong><span>receitas</span></div>
+<div><strong>4</strong><span>dias seguidos</span></div>
+<div><strong>6</strong><span>conquistas</span></div>
+</div>
+<article class="ec-simple-card"><strong>Próxima conquista</strong><p>Prepare mais 1 receita para liberar “Semana completa”.</p><div class="ec-progress"><span style="width:80%"></span></div></article>
+</section>
+<section class="ec-view" data-ec-title="Configurações" id="ecView-config">
+<h4 class="ec-view-title">Configurações</h4>
+<label class="ec-setting-row"><span><strong>Lembretes de cozinha</strong><small>Receba sugestões no horário escolhido</small></span><input checked="" type="checkbox"/></label>
+<label class="ec-setting-row"><span><strong>Atividade dos grupos</strong><small>Comentários, desafios e convites</small></span><input checked="" type="checkbox"/></label>
+<label class="ec-setting-row"><span><strong>Perfil visível para amigos</strong><small>Permite que amigos vejam suas receitas</small></span><input type="checkbox"/></label>
+<button class="ec-secondary-btn" data-ec-view="ajuda" type="button">Abrir ajuda e documentação</button>
+</section>
+<section class="ec-view" data-ec-title="Ajuda" id="ecView-ajuda">
+<h4 class="ec-view-title">Como usar o EasyChef</h4>
+<article class="ec-help-card"><strong>1. Escolha o que fazer</strong><p>Use o botão “Nova ação” para encontrar uma receita ou registrar um prato já preparado.</p></article>
+<article class="ec-help-card"><strong>2. Filtre conforme sua rotina</strong><p>Combine tempo, custo e nível de experiência para reduzir a quantidade de opções.</p></article>
+<article class="ec-help-card"><strong>3. Acompanhe o preparo</strong><p>Confira ingredientes, siga os passos e registre o resultado quando terminar.</p></article>
+<details class="ec-faq"><summary>Qual é a diferença entre receita do EasyChef e de amigo?</summary><p>Receitas do EasyChef são organizadas pela plataforma. Receitas de amigo vêm das publicações das pessoas que você segue.</p></details>
+<details class="ec-faq"><summary>Como registrar algo que já cozinhei?</summary><p>Abra “Nova ação” e escolha “Registrar prato que preparei”.</p></details>
+</section>
+<section class="ec-view" data-ec-title="Nova ação" id="ecView-actions">
+<h4 class="ec-view-title">O que você quer fazer?</h4>
+<p class="ec-muted ec-view-intro">Escolha uma opção. Você poderá voltar sem perder seu progresso.</p>
+<button class="ec-action-card" data-ec-view="buscar" data-search-mode="easychef" type="button"><span class="ec-action-icon">1</span><span><strong>Encontrar uma receita do EasyChef</strong><small>Filtre por tempo, custo e experiência.</small></span><span aria-hidden="true">›</span></button>
+<button class="ec-action-card" data-ec-view="buscar" data-search-mode="amigos" type="button"><span class="ec-action-icon">2</span><span><strong>Cozinhar uma receita de amigo</strong><small>Veja receitas publicadas por pessoas que você segue.</small></span><span aria-hidden="true">›</span></button>
+<button class="ec-action-card" data-ec-view="nova" type="button"><span class="ec-action-icon">3</span><span><strong>Registrar prato que preparei</strong><small>Adicione foto, nome e comentário ao seu feed.</small></span><span aria-hidden="true">›</span></button>
+</section>
+<section class="ec-view" data-ec-title="Encontrar receita" id="ecView-buscar">
+<h4 class="ec-view-title" id="ecSearchHeading">Receitas do EasyChef</h4>
+<label class="ec-search-label" for="ecSearchInput">O que você quer cozinhar?</label>
+<input class="ec-input" id="ecSearchInput" placeholder="Ex.: frango, macarrão ou arroz" type="search"/>
+<p class="ec-filter-label">Filtros ativos</p>
+<div aria-label="Filtros de receita" class="ec-chip-row">
+<button aria-pressed="true" class="ec-chip active" data-filter="rapida" type="button">Até 40 min</button>
+<button aria-pressed="false" class="ec-chip" data-filter="barata" type="button">Baixo custo</button>
+<button aria-pressed="false" class="ec-chip" data-filter="iniciante" type="button">Iniciante</button>
+</div>
+<p aria-live="polite" class="ec-results-summary" id="ecResultsSummary">3 receitas encontradas</p>
+<div id="ecRecipeResults"><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-grelhado.jpg" data-name="Frango grelhado com legumes" data-recipe="Frango grelhado com legumes" data-tags="rapida iniciante" type="button"><img alt="Frango grelhado com legumes servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-grelhado.jpg"/><span class="ec-recipe-copy"><strong>Frango grelhado com legumes</strong><small>35 min · Fácil · 4 porções</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-cremoso.jpg" data-name="Frango cremoso" data-recipe="Frango cremoso" data-tags="rapida barata iniciante" type="button"><img alt="Frango cremoso servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-cremoso.jpg"/><span class="ec-recipe-copy"><strong>Frango cremoso</strong><small>40 min · Fácil · 4 porções</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/peixe-grelhado.jpg" data-name="Peixe grelhado com salada" data-recipe="Peixe grelhado com salada" data-tags="rapida iniciante" type="button"><img alt="Peixe grelhado com salada servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/peixe-grelhado.jpg"/><span class="ec-recipe-copy"><strong>Peixe grelhado com salada</strong><small>30 min · Iniciante · Refeição leve</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/refeicao-saudavel.jpg" data-name="Refeição saudável com arroz" data-recipe="Refeição saudável com arroz" data-tags="barata iniciante" type="button"><img alt="Refeição saudável com arroz servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/refeicao-saudavel.jpg"/><span class="ec-recipe-copy"><strong>Refeição saudável com arroz</strong><small>50 min · Fácil · Refeição completa</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button></div>
+</section>
+<section class="ec-view" data-ec-title="Preparar receita" id="ecView-cozinhar">
+<p class="ec-eyebrow">Receita selecionada</p>
+<h4 class="ec-view-title" id="ecRecipeTitle">Frango grelhado com legumes</h4><img alt="Frango grelhado com arroz e legumes" class="ec-cook-image" id="ecCookImage" loading="lazy" src="img/easychef/frango-grelhado.jpg"/>
+<div aria-label="Etapas da receita" class="ec-step-progress" role="list">
+<button aria-current="step" class="ec-step active" data-step="0" type="button">1. Ingredientes</button>
+<button class="ec-step" data-step="1" type="button">2. Preparo</button>
+<button class="ec-step" data-step="2" type="button">3. Finalizar</button>
+</div>
+<div class="ec-cook-panel active" data-step-panel="0">
+<h5>Separe os ingredientes</h5><div id="ecIngredientList"></div>
+
+
+
+
+<p class="ec-tip"><strong>Dica:</strong> marque cada item para evitar esquecer ingredientes durante o preparo.</p>
+</div>
+<div class="ec-cook-panel" data-step-panel="1">
+<h5>Siga o preparo</h5>
+<ol class="ec-instruction-list" id="ecInstructionList"><li>Misture os ingredientes da massa.</li><li>Grelhe o frango e tempere a gosto.</li><li>Monte as panquecas e leve ao forno por 10 minutos.</li></ol>
+<p class="ec-tip"><strong>Tempo estimado: </strong><span id="ecCookTime">35 minutos</span></p>
+</div>
+<div class="ec-cook-panel" data-step-panel="2">
+<h5>Está tudo pronto?</h5>
+<p>Revise a receita e registre como ficou para acompanhar seu progresso.</p>
+<p class="ec-tip"><strong>Você avançará no desafio:</strong> 3 de 7 receitas.</p>
+</div>
+<div class="ec-step-controls">
+<button class="ec-secondary-btn" disabled="" id="ecPrevStep" type="button">Etapa anterior</button>
+<button class="ec-primary-btn" id="ecNextStep" type="button">Próxima etapa</button>
+</div>
+</section>
+<section class="ec-view" data-ec-title="Registrar prato" id="ecView-nova">
+<h4 class="ec-view-title">Registrar prato que preparei</h4>
+<p class="ec-muted ec-view-intro">Conte como ficou. Os campos marcados são necessários para publicar.</p>
+<form id="ecPostForm" novalidate="">
+<label class="ec-field-label" for="ecRecipeName">Nome do prato <span>Obrigatório</span></label>
+<input class="ec-input" id="ecRecipeName" name="recipeName" placeholder="Ex.: Panqueca integral de frango" required=""/>
+<label class="ec-field-label" for="ecRecipeDescription">Como ficou? <span>Obrigatório</span></label>
+<textarea class="ec-input ec-textarea" id="ecRecipeDescription" name="description" placeholder="Conte o que funcionou, o que mudou e quanto tempo levou." required=""></textarea>
+<button class="ec-upload" id="ecUploadButton" type="button"><img alt="Prévia da foto selecionada para a publicação" class="ec-upload-preview" hidden="" id="ecUploadPreview" loading="lazy" src="img/easychef/prato-brasileiro.jpg"/><strong id="ecUploadText">Adicionar foto</strong><small>Tirar foto ou escolher da galeria</small></button>
+<p class="ec-form-error" hidden="" id="ecFormError" role="alert"></p>
+<button class="ec-submit" type="submit">Publicar no feed</button>
+</form>
+</section>
+<section class="ec-view" data-ec-title="Detalhes da receita" id="ecView-post">
+<img alt="Frango grelhado com arroz e legumes" class="ec-post-detail-image" loading="lazy" src="img/easychef/frango-grelhado.jpg"/>
+<h4 class="ec-view-title">Frango grelhado com legumes</h4>
+<p class="ec-muted">40 min · Dificuldade média · 4 porções</p>
+<article class="ec-simple-card"><strong>Sobre a receita</strong><p>Frango grelhado acompanhado de arroz e legumes, com preparo simples para a rotina.</p></article>
+<div class="ec-post-detail-actions">
+<button class="ec-secondary-btn" data-ec-view="cozinhar" data-image="img/easychef/frango-grelhado.jpg" data-recipe="Frango grelhado com legumes" type="button">Preparar esta receita</button>
+<button class="ec-secondary-btn" data-ec-action="save" type="button">Salvar receita</button>
+</div>
+</section>
+</main>
+<button aria-label="Abrir opções para cozinhar ou registrar um prato" class="ec-fab" id="ecFab" type="button"><span aria-hidden="true">+</span><span>Nova ação</span></button>
+<nav aria-label="Navegação principal" class="ec-bottom-nav">
+<button class="ec-bottom-item active" data-ec-view="feed" type="button"><span>Início</span></button>
+<button class="ec-bottom-item" data-ec-view="grupos" type="button"><span>Grupos</span></button>
+<button class="ec-bottom-item" data-ec-view="receitas" type="button"><span>Receitas</span></button>
+<button class="ec-bottom-item" data-ec-view="perfil" type="button"><span>Perfil</span></button>
+</nav>
+<div aria-live="polite" class="ec-toast" id="ecToast" role="status"></div>
+</div>
+</div>
+</body>
+</html>

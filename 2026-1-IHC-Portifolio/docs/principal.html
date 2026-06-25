@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>🍝 EasyChef Portfolio</title>
+<link href="reset.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+<script src="script.js"></script>
+</head>
+<body onload="A1()">
+<div class="container">
+<!------------- Side Bar --------------->
+<div class="sidebar-conteudo">
+<ul>
+<li class="sidebar-pag"><div class="button nav" onclick="A0()">A0<p>How Might We...</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A1()">A1<p>Matriz CSD</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A2()">A2<p>Analise Competitiva</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A3()">A3<p>Mapa de Empatia</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A4()">A4<p>Pesq. Quantitativa</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A5()">A5<p>Pesq. Qualitativa</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A6()">A6<p>Personas</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A7()">A7<p>Modelo de Tarefas</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A8()">A8<p>Cenarios Problema</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A9()">A9<p>Interface</p></div></li>
+<li class="sidebar-pag"><div class="button nav" onclick="A10()">A10<p>Avaliação da Interação</p></div></li>
+</ul>
+</div>
+<!----------------- Main Content ------------------>
+<div class="main">
+<!------------------- How Might We --------------------->
+<a0 class="section" id="A0">
+<h1>How Might We...</h1>
+<h3>Como podemos tornar o processo de cozinhar mais fácil e divertido?</h3>
+<h4><b>Integrantes:</b>Dawson Monteiro</h4>
+<p class="explanation"> 
+          Nosso projeto começa com a definição do problema central, a partir  das discussões iniciais e observações sobre o comportamento das pessoas no dia a dia, percebemos que cozinhar muitas vezes é visto  como algo trabalhoso e demorado. Diante disso, formulamos nosso design challenge utilizando o formato HMW, "How Might We..." A nossa pergunta norteadora foi como podemos tornar o processo de cozinhar mais fácil e divertido. Essa pergunta é importante porque não limita a solução, mas direciona o pensamento para melhorar a experiência do usuário, tanto do ponto de vista funcional quanto emocional. Não queremos apenas facilitar o hábito de cozinhar, mas também tornar esse momento mais leve e engajador.
+        </p>
+</a0>
+<!----------------------- Tabela CSD --------------------------->
+<a1 class="section" id="A1">
+<h2>Tabela CSD</h2>
+<p class="explanation">
+          Na etapa de desk research, organizamos nosso conhecimento utilizando a matriz CSD, certezas, suposições e dúvidas. Nas certezas, destacamos pontos como o impacto da gamificação, por exemplo o uso de recompensas e streaks, que ajudam na criação de hábitos. Também consideramos dados como o crescimento do uso de delivery, indicando que muitas pessoas deixam de cozinhar. Nas suposições, levantamos hipóteses que ainda precisam ser validadas, como a ideia de que o compromisso social pode incentivar o hábito de cozinhar, ou que a falta de planejamento desmotiva os usuários. Já nas dúvidas, identificamos questões importantes para investigação, como quem cozinha menos, quais são as dificuldades reais na cozinha e quais requisitos uma solução digital precisaria ter para ser prática no uso cotidiano. Essa etapa funciona como uma base de raciocínio, como montar um mapa antes de começar uma viagem, não resolve o problema, mas orienta melhor os próximos passos.
+        </p>
+<div class="internal-content">
+<div class="side-col"></div>
+<div class="table">
+<div class="t-col" id="C">
+<div class="t-header t-left-cell">Certeza</div>
+<div class="t-cell">
+<p>Elementos de gamificação (streaks em particular) aumentam a chance de  formação de hábito no uso de plataformas digitais</p>
+<hr/>
+<lu>
+<li><a href="https://psycnet.apa.org/record/1998-04232-003">APA PsycNet</a></li>
+<li><a href="https://blog.duolingo.com/how-duolingo-streak-builds-habit/">The habit-building research behind your Duolingo streak</a></li>
+<li><a href="https://www.smashingmagazine.com/2026/02/designing-streak-system-ux-psychology/">Designing A Streak System: The UX And Psychology Of Streaks</a></li>
+</lu>
+</div>
+<div class="t-cell">
+                Recompensas virtuais (achievements e colecionáveis) ajudam usuários a formar o hábito de utilizar a plataforma
+                <hr/>
+<li><a href="https://www.nngroup.com/videos/zeigarnik-effect/">³: How to Use the Zeigarnik Effect in UX</a></li>
+</div>
+<div class="t-cell">
+                40% da população brasileira pede comida por delivery e 11% pede pelo menos 1 vez por semana
+                <hr/>
+<li><a href="https://oglobo.globo.com/brasil/noticia/2024/07/07/geracao-z-e-a-que-mais-pede-comida-via-delivery-fast-food-lidera-preferencias.ghtml">⁴: Geração Z é a que mais pede comida via delivery; fast-food lidera preferências</a></li>
+</div>
+<div class="t-cell">
+                Comprar comida pronta é mais caro do que fazer comida em casa.   
+                <hr/>
+<li><a href="https://exame.com/invest/minhas-financas/cozinhar-em-casa-ou-pedir-comida-fora-qual-escolha-pesa-mais-no-bolso/">⁵: Cozinhar em casa ou pedir comida fora: qual escolha pesa mais no bolso?</a></li>
+</div>
+</div>
+<div class="t-col" id="S">
+<div class="t-header">Suposição</div>
+<div class="t-cell">Compromisso social (accountability) aumenta a chance de desenvolver um hábito.</div>
+<div class="t-cell">Cozinhar exige planejamento, o que desincentiva o habito.</div>
+<div class="t-cell">A população jovem está menos propícia a cozinhar em casa por indisponibilidade de tempo e falta de experiência, favorecendo opções mais convenientes como comprar comida fora ou pedir entregas por aplicativo.</div>
+<div class="t-cell">Cozinhar é mais barato do que as outras alternativas de alimentação, porém consome muito mais tempo.</div>
+<div class="t-cell">As pessoas têm dificuldade de saber o que querem cozinhar, então tendo algo a guiar reduz o tempo perdido na cozinha.</div>
+</div>
+<div class="t-col" id="D">
+<div class="t-header t-right-cell">Dúvida</div>
+<div class="t-cell">Quais requisitos de interação vêm com o uso do celular na cozinha? Usar com uma mão só? Fontes grandes? (Exemplo: Waze pra dirigir)</div>
+<div class="t-cell">Qual o principal modivo das pessoas prefirirem outras formas de alimentação?</div>
+<div class="t-cell">Qual faixa etária mais deseja aprender a cozinhar?</div>
+<div class="t-cell">O uso de um aplicativo durante a preparação dos alimentos seria considerado um obstáculo?</div>
+</div>
+</div>
+<div class="side-col"></div>
+</div>
+</a1>
+<!----------------------- Analise Competitiva --------------------------->
+<a2 class="section" id="A2">
+<h2>Análise Competitiva</h2>
+<iframe id="Tabela-Analise-Competitiva" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTIj_HjzBzhRwy49_u7vd6oOU4tpRniL98zHEwM-RcRBqEPoX8nO6PsjjFSt0zxUAw66_XhGLpOKjd/pubhtml?gid=1488489223&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<p class="explanation">
+            Em seguida, analisamos soluções existentes no mercado para entender o que já funciona e o que pode ser melhorado. Observamos plataformas como serviços de entrega de ingredientes e receitas, que facilitam o planejamento, além de sites e aplicativos de receitas que oferecem uma grande seleção de receitas e funções. Também analisamos soluções de outros domínios, como aplicativos de treino, que utilizam acompanhamento de progresso e feedback constante para manter o usuário engajado. Com isso, conseguimos identificar padrões importantes, como interfaces simples e diretas que ajudam na adesão do usuário, organização de conteúdo e personalização como diferenciais e o uso de feedback e progresso para aumentar o engajamento. Por outro lado, também encontramos problemas como a falta de padronização nas receitas, dificuldade de adaptação às preferências do usuário e experiências pouco motivadoras no longo prazo. Essa análise não serve para copiar soluções, mas para entender o que funciona, o que não funciona e onde existem oportunidades para melhorar no design.
+        </p>
+</a2>
+<!----------------------- Mapa de Empatia --------------------------->
+<a3 class="section" id="A3">
+<h2>Mapa de Empatia</h2>
+<p class="explanation">
+            Utilizamos o mapa de empatia para aprofundar o entendimento do usuário. Analisamos o que o usuário fala, pensa, faz e sente. No que ele fala, aparecem desejos como cozinhar melhor e ter mais autonomia. No que ele pensa, surgem preocupações como tempo, esforço e custo dos ingredientes. No que ele faz, percebemos comportamentos como recorrer a soluções rápidas, como delivery ou receitas simples. E no que ele sente, aparecem emoções como cansaço, frustração e, em alguns casos, falta de motivação. Essa etapa é essencial porque transforma dados em empatia, permitindo entender não apenas a tarefa de cozinhar, mas toda a experiência do usuário, incluindo suas dificuldades, expectativas e emoções. Com todas essas etapas, construímos uma base sólida para propor uma solução que realmente faça sentido, com o objetivo de tornar o hábito de cozinhar mais acessível, prazeroso e integrado à rotina das pessoas.  
+            <br/><br/>
+<img src="img/map.png" style="width: 1000px;"/>
+</p>
+</a3>
+<!----------------------- Analise Quantitativa --------------------------->
+<a4 class="section" id="A4">
+<h2>Análise Quantitativa</h2>
+<p class="explanation">
+            Na coleta de respostas ao formulário, obtivemos as respostas de 42 pessoas diferentes. Entre suas respostas, podemos tirar diversas conclusões, como:
+            
+            <br/><br/><br/>• 53.5% são homens, 46.5% são mulheres (1 resposta foi não-séria, sendo desconsiderada).<br/><br/>
+<img src="img/graph1.png"/>
+<br/><br/><br/>• 71.4% tem 18 a 25 anos. Jovens são o grupo mais representado.<br/><br/>
+<img src="img/graph2.png"/>
+<br/><br/><br/>• A renda mais representada é a de uma renda familiar acima de 6 salários mínimos, mas há diversas respostas entre todas as opções.<br/><br/>
+<img src="img/graph3.png"/>
+<br/><br/><br/>• A maioria dos respondentes são alunos de faculdade, 69% tendo o ensino superior incompleto. Como o formulário foi distribuido num ambiente universitário, é um viés que merece ser reconhecido.<br/><br/>
+<img src="img/graph4.png"/>
+<br/><br/><br/>• Entre os sentimentos associados com o hábito de cozinhar, os mais relatados são a preguiça, o prazer e a ansiedade.<br/><br/>
+<img src="img/graph5.png"/>
+<br/><br/><br/>• No <i>ranking</i> da dificuldade das etapas de preparar comida, a parte mais difícil entre os respondentes é escolher o que cozinhar. Foi considerado um resultado surpreendente à equipe, especialmente considerando que as outras etapas são mais frequentemente consideradas "Normal" ou até "Fácil".<br/>
+<br/>Entre as respostas sobre o porquê das dificuldades escolhidas, falta de tempo foi a preocupação mais recorrente. Respondentes citaram a demanda de tempo para comprar ingredientes, a ocupação de tempo com trabalho e estudos, o fato de morarem longe da faculdade e portanto perder mais tempo. Múltiplos respondentes também relatam a intimidação e tempo consumido ao escolher o que cozinhar e quais ingredientes comprarem, mas que o hábito de fazer a comida em si é mais fácil quando essa etapa se conclui.<br/><br/>
+<img src="img/graph6.png"/>
+<br/><br/><br/>• A maioria dos respondentes improvisa uma comida simples ou pedem comida por um app quando não sentem vontade de cozinhar. Ao entrevistar pessoas no exercício de mapa de empatia, muitos disseram que compram comida rápida de se preparar, como miojo ou comida congelada. É possível que comida instantânea seja mais popular entre os jovens, enquanto os mais velhos compram online com mais frequência, tendo uma renda maior. Comer comida instantânea acabou em uma frequência aproximadamente igual a comer em restaurantes.<br/><br/>
+<img src="img/graph7.png"/>
+<br/><br/><br/>• Quando perguntados sobre se querem dedicar mais tempo à culinária, a maioria dos respondentes deram sim como resposta, numa razão de aproximadamente 60 / 40. Dentre as razões dadas, os que não querem aprender ou já sabem cozinhar, ou não tem tempo suficiente para o hábito. Enquanto isso, os que querem dedicar mais tempo explicam que é uma habilidade importante de saberem para diversificarem a dieta, terem autonomia e economizar nos custos.
+            <br/><br/><br/>• A respeito dos impedimentos de cozinhar, a maioria relata ser culpa da preguiça (45.5%), desânimo (43.2%) ou a conveniência de outras alternativas (34.1%). Relatos de falta de tempo e cansaço também ocorreram no campo onde puderam digitar sua resposta.
+            <br/><br/><br/>• 70.5% mostraram interesse numa plataforma social para o incentivo de cozinhar, citando que gostariam de funcionalidades como comentar nas fotos da comida de outros para oferecer elogios, ver o que os amigos estão preparando, competir com eles pela qualidade da comida e até mesmo se organizar para eventos de cozinhar, como ter pessoas trazendo pratos diferentes para uma reunião.
+            <br/><br/><br/>• A maioria dos respondentes não utiliza aplicativos ou sites enquanto cozinha. Entre os que usam, citaram sites de receita como Tudogostoso, receitas.com, receitas nestlé e panelinha.com. Também citaram receitas salvas do youtube e uso de IA generativa.
+            <br/><br/><br/>• Quando uma receita não acaba satisfatoriamente, a maioria dos respondentes relatam frustração com si mesmos por não conseguirem seguir a receita, seguido de frustração com a receita em si. É possível que muitas das receitas disponíveis não sejam claras o suficiente.<br/><br/>
+<img src="img/graph8.png"/>
+<br/><br/><br/>• Somente 31.8% dos respondentes usam aplicativos lúdicos regularmente (Duolingo, Khan Academy, Hevy, Habitica, etc). Quando perguntados sobre os aspectos favoritos desses programas, a maioria relatam o mantimento da ofensiva os ajudavam a se comprometer com as tarefas.
+            <br/><br/><br/> A partir disso, concluímos que o aspecto social num serviço de receitas é um dos aspectos a se priorizar. O problema mais recorrente entre os respondentes era a preguiça ou falta de tempo no hábito de cozinhar, então também vale considerar formas de facilitar a escolha das receitas.
+        </p>
+</a4>
+<!----------------------- Analise Qualitativa --------------------------->
+<a5 class="section" id="A5">
+<h2>Analise Qualitativa</h2>
+<p class="explanation">
+            
+            • Analisando as respostas obtidas na entrevista com os participantes ideais, nós percebemos que as definições de sucesso dos entrevistados são bem diferentes, e que mesmo entre usuários ideais, há diferentes motivações para reforçar o hábito da cozinha.
+            <br/><br/>
+            Um entrevistado disse "Pra mim é conseguir fazer uma refeição completa. Proteína, carboidrato, etc, com menos de vinte reais e em menos de quarenta minutos.", enquanto outro expressou um desejo de impressionar amigos e visitas com suas habilidades culinárias.
+            <br/><br/>
+            Ambos tiveram experiências frustradas com sites de receitas, e gostaram muito da ideia de compartilhar receitas com os amigos, e de ver imagens reais dos pratos como realmente vão ficar. 
+            <br/><br/>
+            Os dois entrevistados usam plataformas com elementos gamificados, mas têm experiências bem diferentes nesses aplicativos. Um deles relatou que gosta do aspecto competitivo dos leaderboards, e que a motivação gerada pela ofensiva é maior do que o desânimo de perder a sequência. O outro relatou que não gosta da ofensiva porque ela acaba se tornando mais importante que o hábito em si, e encorajando o usuário a fazer apenas o mínimo ou a trapacear para manter a sequência. Ambos gostaram da ideia de colecionar conquistas e distintivos digitais como recompensa por cozinhar consistentemente e preparar pratos variados. No entanto, os dois mostraram mais interesse no aspecto social (Letterboxd, Gymrats) e na interação com amigos do que nos mecanismos gamificados, que condiz com os resultados da nossa pesquisa quantitativa.
+            <br/><br/>
+            Um dos entrevistados destacou que o planejamento é a maior barreira para que ele desenvolva o hábito de cozinhar no dia a dia, e sugeriu que o nosso aplicativo contasse com funcionalidades que ajudam a planejar o orçamento e os ingredientes para minimizar as idas ao mercado, os gastos e o desperdício: "Eu ia querer que [o aplicativo] me ajudasse a planejar a semana baseado no que eu tenho em casa e no meu orçamento. Tipo, eu falo "tenho R$80 pra semana e tenho arroz, feijão e frango"
+            <br/><br/>
+            Os dois entrevistados se interessaram na competição amigável:
+            "No GymRats, que é o app que uso pra academia, você vê o treino dos amigos em tempo real e aquilo cria uma competição saudável. Com culinária seria igual. Se eu vejo que meu amigo já cozinhou quatro vezes na semana e eu zero, isso me incomoda. Eu TERIA que fazer alguma coisa."
+            Mas o outro ressaltou que os elementos sociais tem que ter um tom de brincadeira, e que a comparação com amigos pode virar uma fonte de ansiedade se for levada muito a sério.
+            <br/><br/>
+            Um dos entrevistados também comentou que o aspecto mais interessante da ideia é a realidade das interações. Que está enjoado de ver imagens e vídeos de receitas feitas por profissionais com muito mais recursos, habilidade e orçamento que ele que, ao invés de servirem como inspiração, acabam desmotivando por parecerem inalcançáveis.
+            <br/><br/>
+            • Uma coisa que aparece forte nos dois casos é que o problema não é saber cozinha, mas sim manter a consistência. A respondente até cozinha bem e o rodrigo também consegue cozinhar quando tenta então habilidade não é o principal bloqueio. O problema é transformar isso em hábito no dia a dia. 
+            <br/><br/>
+            Outro ponto muito forte é a questão da energia e contexto do momento. A respondente mostra claramente que existe uma diferença entre “a pessoa do sábado” (motivada, planeja, compra ingredientes) e “a pessoa da terça” (cansada, sem energia, toma decisão rápida). Isso é um insight importante: o planejamento atual não considera o estado real do usuário no momento de cozinhar. Já o Rodrigo mostra algo parecido, mas em forma de “pico de motivação que desaparece”, ou seja, ele entra animado e depois volta para a inércia.
+            entendemos que tem um padrão muito claro de que estímulo externo ativa o comportamento. A pessoa 6 cozinha quando vê um vídeo, e a pessoa 5 quando vê algo de uma amiga. Mas esse estímulo não se sustenta sozinho, ele precisa virar rotina. Então o problema não é gerar interesse, é manter continuidade.
+        </p>
+</a5>
+<!----------------------- Personas --------------------------->
+<a6 class="section" id="A6">
+<h2>Personas</h2>
+<p class="explanation">
+<div class="persona-box">
+<img class="persona" src="img/Persona1.jpg"/>
+<div class="persona-text">
+<p class="persona-h1">Cassandra Lopes</p>
+<p><b>Idade:</b> 19                          <b>Ocupação:</b> Estudante de universidade</p>
+<p><b>Estado Civil:</b> Solteira      <b>Características:</b> extrovertida, frugal, amigável, ama cozinhar</p>
+<p><b>Bio:</b> Mora no Rio de Janeiro com sua família, estuda na UFF e leva 1 hora para se deslocar de sua casa até a faculdade. Cozinha na maioria dos dias enquanto seus pais trabalham. Gosta de compartilhar o que cozinha com os amigos, como em festas.</p>
+                            Objetivos:
+                            <p>• Gastar menos tempo escolhendo o que cozinhar;</p>
+<p>• Compartilhar com os amigos as suas receitas;</p>
+<p>• Economizar mais ao gastar menos em comida de rua.</p>
+                            Frustrações:
+                            <p>• Preço de comidas em restaurantes e barracas aumentando;</p>
+<p>• Saber poucas receitas e escolher qual cozinhar na hora.
+
+                            </p>
+<p>"Eu não tenho problemas para cozinhar, mas acho chato perder tempo pensando no que eu vou fazer!"
+
+                        </p>
+<p>Utiliza Tudogostoso, Duolingo e Instagram em seu celular.</p>
+</div>
+</div>
+<div class="persona-box">
+<img class="persona" src="img/Persona2.jpg"/>
+<div class="persona-text">
+<p class="persona-h1">Thomas Guimarães</p>
+<p><b>Idade:</b> 21                          <b>Ocupação:</b> Estudante de universidade</p>
+<p><b>Estado Civil:</b> Solteiro      <b>Características:</b> introvertido, inexperiente, estudioso, come fora frequentemente</p>
+<p><b>Bio:</b> Mora em Niterói com colegas num apartamento compartilhado, estuda na UFF e leva 15 minutos andando para chegar até a faculdade. Raramente cozinha, mas tem interesse.</p>
+                            Objetivos:
+                            <p>• Comer fora de casa menos frequentemente;</p>
+<p>• Saber cozinhar para ter mais independência;</p>
+<p>• Ter mais variedade na própria dieta.</p>
+                            Frustrações:
+                            <p>• Comidas de rua tendem a ser menos saudáveis;</p>
+<p>• Quando são mais completas, costumam ser bem mais caras.
+
+                            </p>
+<p>"Minha família sempre cozinhou pra mim, e agora que estou morando fora, tenh comido muita porcaria. Quero mudar esse hábito!"
+
+                        </p>
+<p>Utiliza Ifood e 99 para pedir comida em seu celular, e Discord no computador.</p>
+</div>
+</div>
+<div class="persona-box">
+<img class="persona" src="img/Persona3.jpg"/>
+<div class="persona-text">
+<p class="persona-h1">Jorge da Silva</p>
+<p><b>Idade:</b> 41                          <b>Ocupação:</b> Professor</p>
+<p><b>Estado Civil:</b> Casado      <b>Características:</b> social, curioso, sabe cozinhar, pouco tempo livre</p>
+<p><b>Bio:</b> Pai de família, mora em Niterói. Trabalha no Rio e demora para chegar em casa, deixando-o com menos tempo para cozinhar. A sua esposa tipicamente cozinha, mas ele quer fazer comida mais frequentemente.</p>
+                            Objetivo:
+                            <p>• Aprender receitas novas;</p>
+<p>• Agradar a família com o que cozinha;</p>
+<p>• Mostrar aos amigos as receitas novas que fizer.</p>
+                            Frustrações:
+                            <p>• Pouco tempo livre para experimentar coisas novas;</p>
+<p>• Quando cozinha, sempre faz as mesmas receitas que já sabe.
+
+                            </p>
+<p>"Queria ter mais tempo pra praticar essa habilidade, então como o tempo tá contado, vou tentar pelo menos aprender mais rapidamente."
+
+                        </p>
+<p>Utiliza Tudogostoso, Receitas da Globo e Facebook em seu celular e computador.</p>
+</div>
+</div>
+<div class="persona-box">
+<img class="persona" src="img/Persona4.jpg"/>
+<div class="persona-text">
+<p class="persona-h1">Milena Soares</p>
+<p><b>Idade:</b> 28                          <b>Ocupação:</b> Jornalista</p>
+<p><b>Estado Civil:</b> Solteira      <b>Características:</b> moderadamente social, estudiosa, curiosa, dedicada ao trabalho</p>
+<p><b>Bio:</b> Morava em São Gonçalo com sua família, se mudou recentemente para o Rio de Janeiro. Já conversava sobre cozinhar com amigos, mas seu foco nos estudos e trabalho deixaram pouco tempo para aprender muitas receitas.</p>
+                            Objetivo:
+                            <p>• Aprender várias receitas novas;</p>
+<p>• Não ter que comer fora, agora que mora sozinha;</p>
+<p>• Preparar refeições para a semana toda.</p>
+                            Frustrações:
+                            <p>• Pouca prática na cozinha, sempre comeu com a família ou fora de casa;</p>
+<p>• Não tem ideia por onde começar para aprender mais.
+
+                            </p>
+<p>"O que eu queria é uma direção do que fazer, porque quando penso nas comidas que minha mãe fazia, parecem complicadas demais para eu começar por elas!"
+
+                        </p>
+<p>Utiliza Ifood, Habitica e Instagram em seu celular e computador.</p>
+</div>
+</div>
+</p>
+</a6>
+<!----------------------- Modelo de Tarefas --------------------------->
+<a7 class="section" id="A7">
+<h2>Modelo de Tarefas</h2>
+<p class="task-model">
+                Modelo de Tarefas para acesso ao aplicativo EasyChef:
+                    
+                    <b>1.1)</b> Usuário está olhando para a tela
+
+                    <b>1.2)</b> Usuário decide se:
+
+                        <b>1.2.1)</b> Segue  a receita genérica (botão)
+
+                        <b>1.2.2)</b> Segue  a receita do amigo (botão)
+
+                        <b>1.2.3)</b> Segue  a receita feita (botão)
+
+                    <b>1.3)</b> Usuário clica em "registrar receita feita" (botão)
+
+                    <b>1.4)</b> Usuário registra receita feita:
+
+                        <b>1.4.1)</b> Usuário escreve titulo
+
+                        <b>1.4.2)</b> Usuário escreve descrição
+
+                        <b>1.4.3)</b> Usuário escreve data e hora (opcional)
+
+                        <b>1.4.4)</b> Usuário deve registrar foto (botão)
+
+                            <b>1.4.4.1)</b> Usuário deve escolher se quer tirar uma foto ou selecionar da galeria:
+
+                                <b>1.4.4.2)</b> Usuário escolheu a foto
+
+                        <b>1.4.5)</b> Usuário terminou de inserir informações e aperta em publicar (botão)
+
+            </p>
+</a7>
+<!----------------------- Cenarios Problema --------------------------->
+<a8 class="section" id="A8">
+<h2>Cenários Problema</h2>
+<div class="cenario-container">
+<!-- Cenário 1 -->
+<div class="cenario-card">
+<div class="cenario-title">Cenário 1: Cassandra - A Indecisão Diária</div>
+<p class="cenario-field"><b>Atores:</b> Cassandra Lopes (estudante, 19 anos)</p>
+<p class="cenario-field"><b>Contexto:</b> É terça-feira, 18h30. Cassandra acabou de voltar da UFF após 1 hora de deslocamento. Ela está cansada depois de um dia cheio de aulas e precisa decidir o que vai cozinhar para o jantar. Amanhã tem mais aulas e ela quer economizar não comprando comida fora, mas está sem criatividade e com pouca energia para pensar.</p>
+<p class="cenario-field"><b>Objetivos:</b></p>
+<ul>
+<li class="cenario-list">Decidir rapidamente o que cozinhar</li>
+<li class="cenario-list">Usar ingredientes que já tem em casa</li>
+<li class="cenario-list">Fazer algo diferente do que comeu nos últimos dias</li>
+<li class="cenario-list">Não gastar muito tempo planejando</li>
+</ul>
+<p class="cenario-field"><b>Ações e Eventos:</b> Cassandra abre a geladeira e vê: arroz, feijão, frango, tomate e cebola. Pega o celular e abre o navegador. Busca "receitas com frango" no Google. Aparecem centenas de resultados. Clica no TudoGostoso. Rola a página vendo várias receitas, mas não consegue decidir qual fazer. Algumas parecem trabalhosas demais, outras não a agradam visualmente. Depois de 15 minutos rolando receitas, ainda não decidiu. Olha o relógio: 18h45. Pensa "já perdi muito tempo nisso". Abre o Instagram para se distrair por alguns minutos. Vê stories de amigos comendo em restaurantes. Volta para a cozinha, olha a geladeira novamente. Considera pedir comida pelo iFood, mas lembra que está tentando economizar. Finalmente decide fazer o básico: arroz, feijão e frango grelhado - a mesma coisa que fez ontem e anteontem. Sente frustração por comer sempre a mesma coisa e por ter perdido tanto tempo tentando decidir.</p>
+<div class="cenario-problems">
+<p><b>Pontos Problemáticos:</b></p>
+<p>1. <b>Paralisia de decisão:</b> Muitas opções disponíveis tornam a escolha mais difícil, não mais fácil (Lei de Hick)</p>
+<p>2. <b>Falta de personalização:</b> Sites de receita não consideram o que ela tem em casa, seu orçamento ou quanto tempo ela tem disponível</p>
+<p>3. <b>Estado emocional:</b> A "Cassandra da terça" (cansada) tem necessidades diferentes da "Cassandra do sábado" (motivada) - os sites não se adaptam ao contexto</p>
+<p>4. <b>Perda de motivação:</b> O tempo gasto decidindo consome a energia que seria usada para cozinhar</p>
+<p>5. <b>Repetição de receitas:</b> Sem direcionamento, acaba fazendo sempre as mesmas coisas por ser mais fácil</p>
+<p>6. <b>Falta de registro histórico:</b> Não tem controle do que já fez recentemente para evitar repetições</p>
+</div>
+</div>
+<!-- Cenário 2 -->
+<div class="cenario-card">
+<div class="cenario-title">Cenário 2: Thomas - O Iniciante Perdido</div>
+<p class="cenario-field"><b>Atores:</b> Thomas Guimarães (estudante, 21 anos)</p>
+<p class="cenario-field"><b>Contexto:</b> É domingo, 14h. Thomas está no apartamento compartilhado em Niterói. Seus colegas saíram e ele decidiu finalmente tentar cozinhar algo "de verdade" em vez de pedir pelo iFood como sempre faz. Ele tem motivação, mas não sabe por onde começar.</p>
+<p class="cenario-field"><b>Objetivos:</b></p>
+<ul>
+<li class="cenario-list">Aprender a fazer uma receita nova</li>
+<li class="cenario-list">Provar para si mesmo que consegue cozinhar</li>
+<li class="cenario-list">Ter mais independência</li>
+<li class="cenario-list">Comer algo mais saudável que fast food</li>
+</ul>
+<p class="cenario-field"><b>Ações e Eventos:</b> Thomas abre o YouTube e busca "receitas fáceis para iniciantes". Encontra um vídeo de 15 minutos mostrando como fazer strogonoff. O resultado no vídeo parece incrível - cremoso, bem apresentado, profissional. Anima-se e decide tentar. Vai ao supermercado comprar os ingredientes. Na seção de creme de leite, fica confuso: creme de leite, creme de leite fresco, creme de leite light - qual usar? Escolhe um aleatoriamente. Volta para casa, separa os ingredientes e começa. O vídeo é corrido, então ele precisa pausar constantemente, lavar as mãos, voltar o vídeo. Perde o ponto onde estava. O celular bloqueia a tela. Tenta desbloquear com as mãos sujas. Depois de 1h de trabalho, o strogonoff fica aguado e sem gosto. Nada parecido com o vídeo. Thomas se sente frustrado: "Não sou bom nisso mesmo". Come um pouco por obrigação e joga o resto fora. Pensa: "Perdi tempo e dinheiro. Na próxima vez peço no iFood mesmo". Nos próximos dias, volta a pedir comida por aplicativo. A motivação inicial desapareceu.</p>
+<div class="cenario-problems">
+<p><b>Pontos Problemáticos:</b></p>
+<p>1. <b>Expectativa vs Realidade:</b> Receitas profissionais criam expectativas irreais que desmotivam iniciantes quando não conseguem replicar</p>
+<p>2. <b>Falta de orientação adequada:</b> Vídeos não são pensados para consulta durante o preparo (problema de interação - usar celular na cozinha)</p>
+<p>3. <b>Ausência de contexto:</b> Não sabe qual ingrediente escolher entre variações (creme de leite normal vs fresco vs light)</p>
+<p>4. <b>Sem sistema de progressão:</b> Não há indicação de que receitas são realmente apropriadas para seu nível de habilidade</p>
+<p>5. <b>Falha sem feedback construtivo:</b> Quando a receita dá errado, não sabe o que fez de errado ou como melhorar</p>
+<p>6. <b>Pico de motivação não sustentado:</b> A motivação inicial não se transforma em hábito porque a primeira experiência foi frustrante</p>
+<p>7. <b>Perda de investimento:</b> Tempo e dinheiro gastos sem resultado reforçam a crença de que "não vale a pena"</p>
+</div>
+</div>
+<!-- Cenário 3 -->
+<div class="cenario-card">
+<div class="cenario-title">Cenário 3: Jorge - O Dia que Não Chegou</div>
+<p class="cenario-field"><b>Atores:</b> Jorge da Silva (professor, 41 anos)</p>
+<p class="cenario-field"><b>Contexto:</b> É sábado de manhã, 9h. Jorge está animado porque tem o fim de semana livre. Durante a semana, chegou a pensar em várias receitas novas que gostaria de experimentar para impressionar a família. Hoje é o dia! Ele quer fazer algo especial para o almoço de domingo.</p>
+<p class="cenario-field"><b>Objetivos:</b></p>
+<ul>
+<li class="cenario-list">Aprender uma receita nova para surpreender a família</li>
+<li class="cenario-list">Aproveitar o tempo livre do fim de semana</li>
+<li class="cenario-list">Compartilhar com os amigos o que fez</li>
+<li class="cenario-list">Sentir-se realizado com uma nova habilidade</li>
+</ul>
+<p class="cenario-field"><b>Ações e Eventos:</b> Jorge abre o TudoGostoso e começa a procurar receitas de risotos - algo que sempre quis aprender. Encontra uma receita de risoto de funghi que parece deliciosa. Anota os ingredientes. Vai ao supermercado. Procura o funghi seco mas não encontra na prateleira. Pergunta ao atendente que diz que está em falta. Pensa em substituir por outro cogumelo, mas não sabe se vai dar certo. Decide tentar fazer outro dia quando encontrar os ingredientes certos. Volta para casa. Procura outra receita. Encontra uma de bobó de camarão. Lista os ingredientes novamente. Olha o relógio: já é 11h30. Se for ao mercado de novo, não vai dar tempo de preparar para o almoço. Decide deixar para fazer no domingo. No domingo, acorda um pouco mais tarde. Tem alguns afazeres da casa. Quando vai começar a se organizar para cozinhar, já é tarde e a família está com fome. Sua esposa sugere fazer o macarrão de sempre. Jorge concorda, um pouco frustrado. Pensa: "Na próxima eu faço". Mas na próxima semana, com trabalho e trânsito, o tempo livre desaparece novamente. A receita nova fica apenas como uma intenção.</p>
+<div class="cenario-problems">
+<p><b>Pontos Problemáticos:</b></p>
+<p>1. <b>Planejamento sem contexto:</b> Não consegue ver quais receitas são viáveis considerando tempo disponível e ingredientes acessíveis</p>
+<p>2. <b>Falta de flexibilidade:</b> Não sabe como substituir ingredientes quando não encontra no mercado</p>
+<p>3. <b>Sem suporte ao planejamento temporal:</b> Não há ajuda para planejar QUANDO fazer a receita considerando sua rotina real</p>
+<p>4. <b>Perda de momentum:</b> O tempo entre decidir fazer e realmente fazer é grande demais, fazendo a motivação evaporar</p>
+<p>5. <b>Ausência de compromisso:</b> Sem uma estrutura que o ajude a se comprometer, é fácil desistir quando surgem obstáculos</p>
+<p>6. <b>Não há preparação prévia:</b> Poderia ter verificado disponibilidade de ingredientes antes de escolher a receita</p>
+<p>7. <b>Ciclo de procrastinação:</b> "Na próxima eu faço" se torna um padrão que mantém o status quo</p>
+</div>
+</div>
+<!-- Cenário 4 -->
+<div class="cenario-card">
+<div class="cenario-title">Cenário 4: Milena - Onde Está o Começo?</div>
+<p class="cenario-field"><b>Atores:</b> Milena Soares (jornalista, 28 anos)</p>
+<p class="cenario-field"><b>Contexto:</b> Segunda-feira, 19h. Milena está na sua nova casa no Rio de Janeiro. É sua segunda semana morando sozinha após se mudar de São Gonçalo. Ela abriu a geladeira e percebeu que precisa urgentemente começar a cozinhar - não pode continuar gastando tanto com delivery e comida de restaurante. Mas ela não tem ideia de como organizar isso.</p>
+<p class="cenario-field"><b>Objetivos:</b></p>
+<ul>
+<li class="cenario-list">Começar a cozinhar regularmente</li>
+<li class="cenario-list">Ter comida preparada para a semana de trabalho</li>
+<li class="cenario-list">Não depender de delivery ou restaurantes</li>
+<li class="cenario-list">Aprender o básico da cozinha</li>
+<li class="cenario-list">Não se sentir sobrecarregada pelo processo</li>
+</ul>
+<p class="cenario-field"><b>Ações e Eventos:</b> Milena abre o Google e busca "como começar a cozinhar do zero". Encontra artigos sobre "10 receitas básicas" e "cozinha para iniciantes". Clica em um artigo que sugere fazer arroz, feijão, e carnes básicas. Parece simples, mas ela não sabe nem quanto de arroz deve fazer para uma pessoa, ou como conservar o feijão durante a semana. Procura "meal prep para iniciantes". Encontra vídeos de pessoas preparando 20 marmitas de uma vez. Parece muito complexo e trabalhoso. Pensa: "Eu nem sei fazer as receitas individuais, como vou fazer tudo isso de uma vez?". Abre o Habitica (que ela usa para organizar tarefas do trabalho) e tenta criar uma tarefa "aprender a cozinhar", mas não sabe como quebrar isso em passos menores e acionáveis. No Instagram, vê uma amiga que postou um prato bonito que fez. Manda mensagem perguntando a receita. A amiga responde com um link do Pinterest. Clica no link: é uma receita em inglês, com "2 cups" e medidas que ela não entende. Fica ainda mais confusa. Olha o relógio: 20h. Está com fome. Abre o iFood e pede um hambúrguer. Sente culpa por gastar mais dinheiro e por não ter progredido nada. Pensa: "Eu preciso de alguém para me ensinar do zero, tipo uma mãe mesmo".</p>
+<div class="cenario-problems">
+<p><b>Pontos Problemáticos:</b></p>
+<p>1. <b>Falta de direcionamento estruturado:</b> Sites e apps assumem um nível básico de conhecimento que ela não tem</p>
+<p>2. <b>Sobrecarga de informação:</b> Muitas fontes diferentes com abordagens conflitantes deixam-na paralisada</p>
+<p>3. <b>Ausência de progressão pedagógica:</b> Não há um "caminho de aprendizado" claro - qual receita vem antes da outra?</p>
+<p>4. <b>Impossibilidade de fragmentar a tarefa:</b> "Aprender a cozinhar" é grande demais; ela precisa de sub-objetivos menores e alcançáveis</p>
+<p>5. <b>Falta de adaptação ao contexto:</b> Meal prep para 20 porções não faz sentido para quem ainda não sabe fazer 1 porção</p>
+<p>6. <b>Barreiras de comunicação:</b> Medidas e termos em outras línguas ou não-familiares aumentam a complexidade</p>
+<p>7. <b>Sem rede de suporte:</b> Ela precisa de orientação humana, mas não tem acesso fácil a isso</p>
+<p>8. <b>Ciclo de culpa improdutivo:</b> Cada vez que pede delivery, reforça sentimento de fracasso sem avançar na solução</p>
+<p>9. <b>Gamificação inadequada:</b> Apps como Habitica não foram feitos para aprendizado progressivo de habilidades complexas</p>
+<p>10. <b>Problema de medição:</b> Não sabe quanto fazer "para uma pessoa", quanto tempo algo dura na geladeira, etc.</p>
+</div>
+</div>
+</div>
+</a8>
+<!----------------------- Interface --------------------------->
+<a9 class="section" id="A9">
+<h2>Interface</h2>
+<p class="explanation">
+          Protótipo interativo mobile do EasyChef. A versão foi revisada a partir da Avaliação Heurística e do Percurso Cognitivo, com rótulos mais claros, feedback das ações, navegação consistente, ajuda e prevenção de erros.
+        </p>
+<div class="easychef-proto" id="easychefProto">
+<div aria-label="Protótipo interativo do EasyChef" class="easychef-phone" role="application">
+<header class="ec-topbar">
+<div class="ec-topbar-side">
+<button aria-expanded="false" aria-label="Abrir menu" class="ec-icon-btn" id="ecHamburgerBtn" type="button">☰</button>
+<button aria-label="Voltar" class="ec-icon-btn ec-back-btn" hidden="" id="ecBackBtn" type="button">←</button>
+</div>
+<h3 class="ec-title" id="ecScreenTitle">EasyChef</h3>
+<button aria-label="Abrir notificações" class="ec-icon-btn ec-notification-btn" id="ecBellBtn" type="button">
+<span aria-hidden="true">●</span>
+<span class="ec-notification-badge" id="ecNotificationBadge">3</span>
+</button>
+</header>
+<aside aria-hidden="true" aria-label="Menu principal" class="ec-drawer" id="ecDrawer">
+<div class="ec-drawer-top">
+<div>
+<strong>Olá, Chef</strong>
+<small>O que vamos preparar?</small>
+</div>
+<button aria-label="Fechar menu" class="ec-drawer-close" id="ecDrawerClose" type="button">×</button>
+</div>
+<nav class="ec-drawer-nav">
+<button class="ec-drawer-item active" data-ec-view="feed" type="button"><span>Início</span><small>Feed e desafio atual</small></button>
+<button class="ec-drawer-item" data-ec-view="grupos" type="button"><span>Meus grupos</span><small>Desafios com amigos</small></button>
+<button class="ec-drawer-item" data-ec-view="receitas" type="button"><span>Receitas salvas</span><small>Itens para cozinhar depois</small></button>
+<button class="ec-drawer-item" data-ec-view="perfil" type="button"><span>Meu perfil</span><small>Progresso e conquistas</small></button>
+<button class="ec-drawer-item" data-ec-view="config" type="button"><span>Configurações</span><small>Preferências do aplicativo</small></button>
+<button class="ec-drawer-item" data-ec-view="ajuda" type="button"><span>Ajuda</span><small>Como usar o EasyChef</small></button>
+</nav>
+</aside>
+<button aria-label="Fechar menu" class="ec-backdrop" id="ecBackdrop" tabindex="-1" type="button"></button>
+<main class="ec-content" id="ecContent">
+<section class="ec-view active" data-ec-title="EasyChef" id="ecView-feed">
+<div class="ec-welcome-card">
+<div>
+<p class="ec-eyebrow">Boa noite</p>
+<h4>O que você quer cozinhar hoje?</h4>
+<p>Encontre uma receita compatível com seu tempo e experiência.</p>
+</div>
+<button class="ec-primary-btn" data-ec-view="actions" type="button">Escolher receita</button>
+</div>
+<article class="ec-group-card"><img alt="Duas pessoas preparando legumes para um desafio culinário" class="ec-challenge-image" loading="lazy" src="img/easychef/desafio-7-dias.jpg"/>
+<div class="ec-card-heading">
+<div>
+<p class="ec-eyebrow">Desafio em andamento</p>
+<h4>7 dias cozinhando</h4>
+</div>
+<span class="ec-status-chip">2 de 7</span>
+</div>
+<p class="ec-muted">Você preparou 2 receitas. Faltam 5 para concluir o desafio.</p>
+<div aria-label="29% do desafio concluído" class="ec-progress"><span style="width:29%"></span></div>
+<div class="ec-progress-meta"><span>29% concluído</span><span>Líder: 5 receitas</span></div>
+</article>
+<div class="ec-section-heading">
+<h4>Atividade dos amigos</h4>
+<button class="ec-text-btn" data-ec-view="grupos" type="button">Ver grupos</button>
+</div>
+<div class="ec-feed-list" id="ecFeedList">
+<article class="ec-post-card">
+<div class="ec-post-header">
+<img alt="Foto de perfil de Aline" class="ec-avatar" loading="lazy" src="img/easychef/avatar-aline.jpg"/>
+<div class="ec-post-main">
+<h4>Aline preparou Frango grelhado com legumes</h4>
+<small>Hoje, 18:45 · 35 min · Fácil</small>
+</div>
+</div><img alt="Frango grelhado com arroz e legumes" class="ec-post-photo" loading="lazy" src="img/easychef/frango-grelhado.jpg"/>
+<p>“Usei alho, limão e páprica. Ficou pronto em 35 minutos.”</p>
+<div class="ec-post-actions">
+<button data-ec-action="like" type="button">Curtir <span>14</span></button>
+<button data-ec-action="comment" type="button">Comentar <span>6</span></button>
+<button data-ec-view="post" type="button">Ver detalhes</button>
+<button data-ec-action="save" type="button">Salvar</button>
+</div>
+</article>
+<article class="ec-post-card">
+<div class="ec-post-header">
+<div class="ec-avatar ec-avatar-blue">TH</div>
+<div class="ec-post-main">
+<h4>Thomas preparou Peixe grelhado com salada</h4>
+<small>Ontem, 21:10 · 30 min · Iniciante</small>
+</div>
+</div><img alt="Filé de peixe grelhado acompanhado de salada" class="ec-post-photo" loading="lazy" src="img/easychef/peixe-grelhado.jpg"/>
+<p>“Ficou leve e foi mais fácil do que eu esperava.”</p>
+<div class="ec-post-actions">
+<button data-ec-action="like" type="button">Curtir <span>8</span></button>
+<button data-ec-action="comment" type="button">Comentar <span>2</span></button>
+<button data-ec-view="post" type="button">Ver detalhes</button>
+<button data-ec-action="save" type="button">Salvar</button>
+</div>
+</article>
+</div>
+</section>
+<section class="ec-view" data-ec-title="Notificações" id="ecView-notificacoes">
+<div class="ec-section-heading">
+<h4>Notificações</h4>
+<button class="ec-text-btn" id="ecMarkRead" type="button">Marcar como lidas</button>
+</div>
+<div class="ec-notification-list">
+<button class="ec-notification-item unread" data-ec-view="post" type="button"><strong>Aline comentou na sua receita</strong><small>“Vou testar essa troca de ingrediente.” · há 8 min</small></button>
+<button class="ec-notification-item unread" data-ec-view="grupos" type="button"><strong>Você avançou no desafio</strong><small>Agora são 2 de 7 receitas · há 1 h</small></button>
+<button class="ec-notification-item unread" data-ec-view="receitas" type="button"><strong>Nova sugestão para iniciantes</strong><small>Frango cremoso · ontem</small></button>
+</div>
+</section>
+<section class="ec-view" data-ec-title="Meus grupos" id="ecView-grupos">
+<div class="ec-section-heading"><h4>Meus grupos</h4><button class="ec-text-btn" data-ec-action="new-group" type="button">Criar grupo</button></div>
+<article class="ec-group-detail-card"><img alt="Amigos preparando uma refeição juntos" class="ec-group-media" loading="lazy" src="img/easychef/grupo-cozinha.jpg"/>
+<div class="ec-card-heading"><div><h4>Lindinhos</h4><p class="ec-muted">Cozinhar ao menos 3 vezes por semana</p></div><span class="ec-status-chip">4/6</span></div>
+<div class="ec-progress"><span style="width:67%"></span></div>
+<div class="ec-progress-meta"><span>4 participantes ativos</span><span>214 dias restantes</span></div>
+</article>
+<article class="ec-group-detail-card"><img alt="Frango grelhado com legumes representando o desafio Chef da Semana" class="ec-group-media" loading="lazy" src="img/easychef/chef-semana.jpg"/>
+<div class="ec-card-heading"><div><h4>Chef da Semana</h4><p class="ec-muted">Experimentar uma receita nova até domingo</p></div><span class="ec-status-chip">60%</span></div>
+<div class="ec-progress"><span style="width:60%"></span></div>
+<div class="ec-progress-meta"><span>Você: 3 receitas</span><span>18 dias restantes</span></div>
+</article>
+<article class="ec-group-detail-card"><img alt="Prato brasileiro com arroz, feijão e ovo representando refeições econômicas" class="ec-group-media" loading="lazy" src="img/easychef/prato-brasileiro.jpg"/>
+<div class="ec-card-heading"><div><h4>Cozinha de República</h4><p class="ec-muted">Planejar refeições econômicas em grupo</p></div><span class="ec-status-chip">1/4</span></div>
+<div class="ec-progress"><span style="width:25%"></span></div>
+<div class="ec-progress-meta"><span>Meta: 4 refeições</span><span>7 dias restantes</span></div>
+</article>
+</section>
+<section class="ec-view" data-ec-title="Receitas salvas" id="ecView-receitas">
+<div class="ec-section-heading"><h4>Receitas salvas</h4><button class="ec-text-btn" data-ec-view="buscar" type="button">Buscar mais</button></div>
+
+
+
+<button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-grelhado.jpg" data-recipe="Frango grelhado com legumes" type="button"><img alt="Frango grelhado com legumes servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-grelhado.jpg"/><span class="ec-recipe-copy"><strong>Frango grelhado com legumes</strong><small>35 min · Fácil · Alto teor de proteína</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-cremoso.jpg" data-recipe="Frango cremoso" type="button"><img alt="Frango cremoso servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-cremoso.jpg"/><span class="ec-recipe-copy"><strong>Frango cremoso</strong><small>40 min · Fácil · 4 porções</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/prato-brasileiro.jpg" data-recipe="Prato brasileiro completo" type="button"><img alt="Prato brasileiro completo servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/prato-brasileiro.jpg"/><span class="ec-recipe-copy"><strong>Prato brasileiro completo</strong><small>45 min · Iniciante · Baixo custo</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button></section>
+<section class="ec-view" data-ec-title="Meu perfil" id="ecView-perfil">
+<div class="ec-profile-card">
+<img alt="Foto de perfil do usuário Chef Easy" class="ec-profile-avatar" loading="lazy" src="img/easychef/avatar-chef.jpg"/>
+<div><h4>Chef Easy</h4><p class="ec-muted">Cozinhando com mais constância</p></div>
+</div>
+<div class="ec-stat-grid">
+<div><strong>12</strong><span>receitas</span></div>
+<div><strong>4</strong><span>dias seguidos</span></div>
+<div><strong>6</strong><span>conquistas</span></div>
+</div>
+<article class="ec-simple-card"><strong>Próxima conquista</strong><p>Prepare mais 1 receita para liberar “Semana completa”.</p><div class="ec-progress"><span style="width:80%"></span></div></article>
+</section>
+<section class="ec-view" data-ec-title="Configurações" id="ecView-config">
+<h4 class="ec-view-title">Configurações</h4>
+<label class="ec-setting-row"><span><strong>Lembretes de cozinha</strong><small>Receba sugestões no horário escolhido</small></span><input checked="" type="checkbox"/></label>
+<label class="ec-setting-row"><span><strong>Atividade dos grupos</strong><small>Comentários, desafios e convites</small></span><input checked="" type="checkbox"/></label>
+<label class="ec-setting-row"><span><strong>Perfil visível para amigos</strong><small>Permite que amigos vejam suas receitas</small></span><input type="checkbox"/></label>
+<button class="ec-secondary-btn" data-ec-view="ajuda" type="button">Abrir ajuda e documentação</button>
+</section>
+<section class="ec-view" data-ec-title="Ajuda" id="ecView-ajuda">
+<h4 class="ec-view-title">Como usar o EasyChef</h4>
+<article class="ec-help-card"><strong>1. Escolha o que fazer</strong><p>Use o botão “Nova ação” para encontrar uma receita ou registrar um prato já preparado.</p></article>
+<article class="ec-help-card"><strong>2. Filtre conforme sua rotina</strong><p>Combine tempo, custo e nível de experiência para reduzir a quantidade de opções.</p></article>
+<article class="ec-help-card"><strong>3. Acompanhe o preparo</strong><p>Confira ingredientes, siga os passos e registre o resultado quando terminar.</p></article>
+<details class="ec-faq"><summary>Qual é a diferença entre receita do EasyChef e de amigo?</summary><p>Receitas do EasyChef são organizadas pela plataforma. Receitas de amigo vêm das publicações das pessoas que você segue.</p></details>
+<details class="ec-faq"><summary>Como registrar algo que já cozinhei?</summary><p>Abra “Nova ação” e escolha “Registrar prato que preparei”.</p></details>
+</section>
+<section class="ec-view" data-ec-title="Nova ação" id="ecView-actions">
+<h4 class="ec-view-title">O que você quer fazer?</h4>
+<p class="ec-muted ec-view-intro">Escolha uma opção. Você poderá voltar sem perder seu progresso.</p>
+<button class="ec-action-card" data-ec-view="buscar" data-search-mode="easychef" type="button"><span class="ec-action-icon">1</span><span><strong>Encontrar uma receita do EasyChef</strong><small>Filtre por tempo, custo e experiência.</small></span><span aria-hidden="true">›</span></button>
+<button class="ec-action-card" data-ec-view="buscar" data-search-mode="amigos" type="button"><span class="ec-action-icon">2</span><span><strong>Cozinhar uma receita de amigo</strong><small>Veja receitas publicadas por pessoas que você segue.</small></span><span aria-hidden="true">›</span></button>
+<button class="ec-action-card" data-ec-view="nova" type="button"><span class="ec-action-icon">3</span><span><strong>Registrar prato que preparei</strong><small>Adicione foto, nome e comentário ao seu feed.</small></span><span aria-hidden="true">›</span></button>
+</section>
+<section class="ec-view" data-ec-title="Encontrar receita" id="ecView-buscar">
+<h4 class="ec-view-title" id="ecSearchHeading">Receitas do EasyChef</h4>
+<label class="ec-search-label" for="ecSearchInput">O que você quer cozinhar?</label>
+<input class="ec-input" id="ecSearchInput" placeholder="Ex.: frango, macarrão ou arroz" type="search"/>
+<p class="ec-filter-label">Filtros ativos</p>
+<div aria-label="Filtros de receita" class="ec-chip-row">
+<button aria-pressed="true" class="ec-chip active" data-filter="rapida" type="button">Até 40 min</button>
+<button aria-pressed="false" class="ec-chip" data-filter="barata" type="button">Baixo custo</button>
+<button aria-pressed="false" class="ec-chip" data-filter="iniciante" type="button">Iniciante</button>
+</div>
+<p aria-live="polite" class="ec-results-summary" id="ecResultsSummary">3 receitas encontradas</p>
+<div id="ecRecipeResults"><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-grelhado.jpg" data-name="Frango grelhado com legumes" data-recipe="Frango grelhado com legumes" data-tags="rapida iniciante" type="button"><img alt="Frango grelhado com legumes servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-grelhado.jpg"/><span class="ec-recipe-copy"><strong>Frango grelhado com legumes</strong><small>35 min · Fácil · 4 porções</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/frango-cremoso.jpg" data-name="Frango cremoso" data-recipe="Frango cremoso" data-tags="rapida barata iniciante" type="button"><img alt="Frango cremoso servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/frango-cremoso.jpg"/><span class="ec-recipe-copy"><strong>Frango cremoso</strong><small>40 min · Fácil · 4 porções</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/peixe-grelhado.jpg" data-name="Peixe grelhado com salada" data-recipe="Peixe grelhado com salada" data-tags="rapida iniciante" type="button"><img alt="Peixe grelhado com salada servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/peixe-grelhado.jpg"/><span class="ec-recipe-copy"><strong>Peixe grelhado com salada</strong><small>30 min · Iniciante · Refeição leve</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button><button class="ec-recipe-card" data-ec-view="cozinhar" data-image="img/easychef/refeicao-saudavel.jpg" data-name="Refeição saudável com arroz" data-recipe="Refeição saudável com arroz" data-tags="barata iniciante" type="button"><img alt="Refeição saudável com arroz servido em um prato" class="ec-recipe-thumb" loading="lazy" src="img/easychef/refeicao-saudavel.jpg"/><span class="ec-recipe-copy"><strong>Refeição saudável com arroz</strong><small>50 min · Fácil · Refeição completa</small></span><span aria-hidden="true" class="ec-recipe-arrow">›</span></button></div>
+</section>
+<section class="ec-view" data-ec-title="Preparar receita" id="ecView-cozinhar">
+<p class="ec-eyebrow">Receita selecionada</p>
+<h4 class="ec-view-title" id="ecRecipeTitle">Frango grelhado com legumes</h4><img alt="Frango grelhado com arroz e legumes" class="ec-cook-image" id="ecCookImage" loading="lazy" src="img/easychef/frango-grelhado.jpg"/>
+<div aria-label="Etapas da receita" class="ec-step-progress" role="list">
+<button aria-current="step" class="ec-step active" data-step="0" type="button">1. Ingredientes</button>
+<button class="ec-step" data-step="1" type="button">2. Preparo</button>
+<button class="ec-step" data-step="2" type="button">3. Finalizar</button>
+</div>
+<div class="ec-cook-panel active" data-step-panel="0">
+<h5>Separe os ingredientes</h5><div id="ecIngredientList"></div>
+
+
+
+
+<p class="ec-tip"><strong>Dica:</strong> marque cada item para evitar esquecer ingredientes durante o preparo.</p>
+</div>
+<div class="ec-cook-panel" data-step-panel="1">
+<h5>Siga o preparo</h5>
+<ol class="ec-instruction-list" id="ecInstructionList"><li>Misture os ingredientes da massa.</li><li>Grelhe o frango e tempere a gosto.</li><li>Monte as panquecas e leve ao forno por 10 minutos.</li></ol>
+<p class="ec-tip"><strong>Tempo estimado: </strong><span id="ecCookTime">35 minutos</span></p>
+</div>
+<div class="ec-cook-panel" data-step-panel="2">
+<h5>Está tudo pronto?</h5>
+<p>Revise a receita e registre como ficou para acompanhar seu progresso.</p>
+<p class="ec-tip"><strong>Você avançará no desafio:</strong> 3 de 7 receitas.</p>
+</div>
+<div class="ec-step-controls">
+<button class="ec-secondary-btn" disabled="" id="ecPrevStep" type="button">Etapa anterior</button>
+<button class="ec-primary-btn" id="ecNextStep" type="button">Próxima etapa</button>
+</div>
+</section>
+<section class="ec-view" data-ec-title="Registrar prato" id="ecView-nova">
+<h4 class="ec-view-title">Registrar prato que preparei</h4>
+<p class="ec-muted ec-view-intro">Conte como ficou. Os campos marcados são necessários para publicar.</p>
+<form id="ecPostForm" novalidate="">
+<label class="ec-field-label" for="ecRecipeName">Nome do prato <span>Obrigatório</span></label>
+<input class="ec-input" id="ecRecipeName" name="recipeName" placeholder="Ex.: Panqueca integral de frango" required=""/>
+<label class="ec-field-label" for="ecRecipeDescription">Como ficou? <span>Obrigatório</span></label>
+<textarea class="ec-input ec-textarea" id="ecRecipeDescription" name="description" placeholder="Conte o que funcionou, o que mudou e quanto tempo levou." required=""></textarea>
+<button class="ec-upload" id="ecUploadButton" type="button"><img alt="Prévia da foto selecionada para a publicação" class="ec-upload-preview" hidden="" id="ecUploadPreview" loading="lazy" src="img/easychef/prato-brasileiro.jpg"/><strong id="ecUploadText">Adicionar foto</strong><small>Tirar foto ou escolher da galeria</small></button>
+<p class="ec-form-error" hidden="" id="ecFormError" role="alert"></p>
+<button class="ec-submit" type="submit">Publicar no feed</button>
+</form>
+</section>
+<section class="ec-view" data-ec-title="Detalhes da receita" id="ecView-post">
+<img alt="Frango grelhado com arroz e legumes" class="ec-post-detail-image" loading="lazy" src="img/easychef/frango-grelhado.jpg"/>
+<h4 class="ec-view-title">Frango grelhado com legumes</h4>
+<p class="ec-muted">40 min · Dificuldade média · 4 porções</p>
+<article class="ec-simple-card"><strong>Sobre a receita</strong><p>Frango grelhado acompanhado de arroz e legumes, com preparo simples para a rotina.</p></article>
+<div class="ec-post-detail-actions">
+<button class="ec-secondary-btn" data-ec-view="cozinhar" data-image="img/easychef/frango-grelhado.jpg" data-recipe="Frango grelhado com legumes" type="button">Preparar esta receita</button>
+<button class="ec-secondary-btn" data-ec-action="save" type="button">Salvar receita</button>
+</div>
+</section>
+</main>
+<button aria-label="Abrir opções para cozinhar ou registrar um prato" class="ec-fab" id="ecFab" type="button"><span aria-hidden="true">+</span><span>Nova ação</span></button>
+<nav aria-label="Navegação principal" class="ec-bottom-nav">
+<button class="ec-bottom-item active" data-ec-view="feed" type="button"><span>Início</span></button>
+<button class="ec-bottom-item" data-ec-view="grupos" type="button"><span>Grupos</span></button>
+<button class="ec-bottom-item" data-ec-view="receitas" type="button"><span>Receitas</span></button>
+<button class="ec-bottom-item" data-ec-view="perfil" type="button"><span>Perfil</span></button>
+</nav>
+<div aria-live="polite" class="ec-toast" id="ecToast" role="status"></div>
+</div>
+</div>
+</a9>
+<a10 class="section" id="A10">
+<section aria-labelledby="evaluation-title" class="evaluation-section">
+<header class="evaluation-hero">
+<p class="evaluation-kicker">Avaliação da interação</p>
+<h2 id="evaluation-title">Avaliação Heurística Consolidada</h2>
+<p>A Avaliação Heurística é um método de inspeção no qual especialistas analisam uma interface com base nas dez heurísticas de Nielsen. No EasyChef, os avaliadores percorreram as principais telas e tarefas do protótipo, registraram problemas de usabilidade, classificaram sua gravidade e propuseram soluções de redesign. Depois, os achados individuais foram reunidos em um resultado consolidado.</p>
+</header>
+<div aria-label="Resumo da avaliação heurística" class="evaluation-summary">
+<article><strong>12</strong><span>problemas consolidados</span></article>
+<article><strong>5</strong><span>violações de visibilidade</span></article>
+<article><strong>3</strong><span>problemas de gravidade grande</span></article>
+<article><strong>Feed</strong><span>área com mais ocorrências</span></article>
+</div>
+<div class="evaluation-note">
+<strong>Escopo analisado:</strong> feed principal, menu lateral, grupos, ações rápidas, navegação, gamificação e componentes interativos.
+    </div>
+<div class="evaluation-evidence-intro">
+  <h3>Evidências visuais da inspeção</h3>
+  <p>As capturas abaixo registram a versão anterior do protótipo. Elas ajudam a relacionar cada problema observado com o elemento concreto da interface que motivou a classificação heurística e a proposta de redesign.</p>
+</div>
+
+<div class="heuristic-grid">
+  <article class="heuristic-card heuristic-card-with-image">
+    <div class="heuristic-card-top">
+      <span class="heuristic-number">01</span>
+      <span class="severity severity-large">Grande</span>
+    </div>
+    <h3>Feedback e estado do sistema pouco claros no feed</h3>
+    <figure class="heuristic-evidence">
+      <img src="img/avaliacao/feed-principal-antes.jpeg" alt="Versão anterior do feed do EasyChef, com ícone de notificações sem resposta, desafio sem barra de progresso e publicações com grandes áreas vazias.">
+      <figcaption>Versão anterior do feed: o sino não apresentava resposta e o desafio mostrava poucos dados sobre o andamento.</figcaption>
+    </figure>
+    <p><strong>Heurísticas violadas:</strong> Visibilidade do estado do sistema e Consistência e padronização.</p>
+    <p><strong>Descrição:</strong> O ícone de notificações aparentava ser clicável, mas não executava ação nem fornecia feedback. Na mesma tela, o desafio informava apenas valores isolados, sem meta total, percentual ou barra de progresso, dificultando a compreensão do estado atual.</p>
+    <p><strong>Redesign:</strong> Implementar uma área de notificações com contador de itens não lidos e apresentar o desafio com meta, percentual e progresso visual.</p>
+    <p class="correction-status"><strong>Correção aplicada:</strong> foram adicionadas uma tela de notificações, um indicador de pendências, uma barra de progresso e uma explicação textual do que falta para concluir o desafio.</p>
+  </article>
+
+  <article class="heuristic-card heuristic-card-with-image">
+    <div class="heuristic-card-top">
+      <span class="heuristic-number">02</span>
+      <span class="severity severity-small">Pequeno</span>
+    </div>
+    <h3>Botão “+” e opções de nova ação ambíguos</h3>
+    <figure class="heuristic-evidence">
+      <img src="img/avaliacao/nova-acao-antes.jpeg" alt="Versão anterior da tela Nova ação do EasyChef, com botão de adição e opções pouco descritivas.">
+      <figcaption>Versão anterior da tela “Nova ação”: o símbolo “+” e os rótulos exigiam interpretação do usuário.</figcaption>
+    </figure>
+    <p><strong>Heurísticas violadas:</strong> Reconhecimento em vez de memorização e Correspondência entre o sistema e o mundo real.</p>
+    <p><strong>Descrição:</strong> O símbolo “+” indicava que algo poderia ser adicionado, mas não deixava claro se a função serviria para buscar uma receita, publicar conteúdo ou registrar um prato. Os rótulos “Seguir receita EasyChef” e “Seguir receita de amigo” também não explicavam com precisão a diferença entre os caminhos.</p>
+    <p><strong>Redesign:</strong> Acrescentar um rótulo textual ao botão e reescrever as opções com verbos e objetivos próximos da linguagem do usuário.</p>
+    <p class="correction-status"><strong>Correção aplicada:</strong> o botão passou a se chamar “Nova ação”, e as opções foram reformuladas para “Encontrar uma receita do EasyChef”, “Cozinhar uma receita de amigo” e “Registrar prato que preparei”.</p>
+  </article>
+
+  <article class="heuristic-card heuristic-card-with-image">
+    <div class="heuristic-card-top">
+      <span class="heuristic-number">03</span>
+      <span class="severity severity-small">Pequeno</span>
+    </div>
+    <h3>Menu lateral sem saída explícita e com estado pouco evidente</h3>
+    <figure class="heuristic-evidence">
+      <img src="img/avaliacao/menu-lateral-antes.jpeg" alt="Versão anterior do menu lateral do EasyChef, sem botão explícito de fechamento e com destaque visual limitado da tela ativa.">
+      <figcaption>Versão anterior do menu lateral: não havia um controle visível para fechar o painel.</figcaption>
+    </figure>
+    <p><strong>Heurísticas violadas:</strong> Controle e liberdade do usuário e Consistência e padronização.</p>
+    <p><strong>Descrição:</strong> Depois de abrir o menu, o usuário não encontrava uma indicação explícita de como fechá-lo. O destaque da opção atual também era insuficiente para comunicar com segurança em qual área do sistema ele se encontrava.</p>
+    <p><strong>Redesign:</strong> Incluir botão de fechamento, permitir clique fora do painel, aceitar a tecla Esc e destacar de maneira consistente a opção ativa.</p>
+    <p class="correction-status"><strong>Correção aplicada:</strong> foram implementadas as três formas de fechamento e um estado visual mais claro para a seção selecionada.</p>
+  </article>
+
+  <article class="heuristic-card heuristic-card-with-image">
+    <div class="heuristic-card-top">
+      <span class="heuristic-number">04</span>
+      <span class="severity severity-small">Pequeno</span>
+    </div>
+    <h3>Tela de detalhes com conteúdo incompleto e hierarquia fraca</h3>
+    <figure class="heuristic-evidence">
+      <img src="img/avaliacao/detalhe-post-antes.jpeg" alt="Versão anterior da tela Detalhe do post do EasyChef, com imagem placeholder, métricas comprimidas e ações pouco destacadas.">
+      <figcaption>Versão anterior do detalhe do post: a imagem permanecia como placeholder e as informações competiam pelo mesmo espaço.</figcaption>
+    </figure>
+    <p><strong>Heurísticas violadas:</strong> Visibilidade do estado do sistema e Projeto estético e minimalista.</p>
+    <p><strong>Descrição:</strong> A ausência de uma imagem real reduzia a compreensão do conteúdo publicado. Além disso, título, tempo, dificuldade, métricas e ações apareciam comprimidos, prejudicando a leitura e a identificação das possibilidades de interação.</p>
+    <p><strong>Redesign:</strong> Substituir placeholders por imagens reais, separar informações descritivas das métricas sociais e destacar as ações principais com rótulos consistentes.</p>
+    <p class="correction-status"><strong>Correção aplicada:</strong> foram inseridas imagens das receitas, melhorada a hierarquia tipográfica e separadas as ações de visualizar, salvar, curtir e comentar.</p>
+  </article>
+
+  <article class="heuristic-card">
+    <div class="heuristic-card-top">
+      <span class="heuristic-number">05</span>
+      <span class="severity severity-large">Grande</span>
+    </div>
+    <h3>Ausência de ajuda para novos usuários</h3>
+    <p><strong>Heurística violada:</strong> Ajuda e documentação.</p>
+    <p><strong>Descrição:</strong> O protótipo não explicava como buscar uma receita, acompanhar o preparo ou registrar um prato, o que poderia prejudicar principalmente pessoas com pouca experiência culinária ou pouca familiaridade com o aplicativo.</p>
+    <p><strong>Redesign:</strong> Criar uma área de ajuda organizada pelas principais tarefas, com explicações curtas e respostas para dúvidas frequentes.</p>
+    <p class="correction-status"><strong>Correção aplicada:</strong> foi incluída uma seção de ajuda com orientações sobre busca, filtros, preparo, registro e funcionalidades sociais.</p>
+  </article>
+</div>
+<section aria-labelledby="evaluation-conclusion-title" class="evaluation-conclusion">
+<h3 id="evaluation-conclusion-title">Consolidação dos resultados</h3>
+<p>A análise mostrou que os principais problemas estavam relacionados à falta de feedback, à ambiguidade de algumas ações e à ausência de informações suficientes sobre o estado do sistema. A heurística mais afetada foi <strong>Visibilidade do estado do sistema</strong>. Os resultados orientaram o redesign do protótipo e ajudaram a priorizar correções antes da entrega final.</p>
+<a class="evaluation-report-link" href="relatorios/avaliacao-heuristica-easychef.pdf" rel="noopener" target="_blank">Abrir relatório completo da Avaliação Heurística</a>
+</section>
+<section aria-labelledby="first-click-title" class="first-click-results">
+  <header class="first-click-header">
+    <p class="evaluation-kicker">Avaliação com participantes</p>
+    <h3 id="first-click-title">Resultados do First Click</h3>
+    <p>
+      O teste foi realizado no Useberry com imagens estáticas do protótipo. Em cada tarefa,
+      o participante deveria indicar apenas o primeiro local em que clicaria. Depois de cada
+      escolha, foi apresentada uma pergunta de confiança em escala de 1 a 7. Os mapas de
+      calor abaixo mostram a distribuição dos primeiros cliques, enquanto os gráficos
+      apresentam o tempo gasto antes da decisão.
+    </p>
+  </header>
+
+  <div class="first-click-method">
+    <span><strong>4</strong> tarefas avaliadas</span>
+    <span><strong>Primeiro clique</strong> como medida principal</span>
+    <span><strong>Confiança</strong> coletada após cada tarefa</span>
+  </div>
+
+  <div class="first-click-task-list">
+    <article class="first-click-task-card">
+      <div class="first-click-task-heading">
+        <span class="first-click-task-number">Tarefa 1</span>
+        <h4>Encontrar algo rápido para cozinhar</h4>
+      </div>
+      <p class="first-click-scenario">
+        O participante deveria imaginar que havia chegado em casa depois de um dia cansativo
+        e queria preparar algo simples, rápido e adequado à sua experiência, evitando pedir
+        comida por aplicativo.
+      </p>
+      <p class="first-click-analysis">
+        <strong>Interpretação:</strong> a maior concentração de cliques ocorreu em
+        “Escolher receita”, indicando que o principal chamado da tela foi compreendido.
+        Entretanto, também houve cliques em “Receitas”, “Nova ação” e “Ver grupos”, o que
+        revela caminhos concorrentes. O tempo variou dos primeiros segundos até cerca de
+        27 segundos, mostrando que parte dos participantes hesitou antes de decidir.
+      </p>
+      <div class="first-click-visual-grid">
+        <figure>
+          <img src="img/first-click/tarefa-01-mapa-cliques.png"
+               alt="Mapa de calor da primeira tarefa, com maior concentração no botão Escolher receita e cliques secundários em outras áreas da tela inicial.">
+          <figcaption>Mapa de cliques da tarefa 1.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/first-click/tarefa-01-tempo.png"
+               alt="Gráfico de distribuição do tempo gasto pelos participantes na primeira tarefa.">
+          <figcaption>Distribuição do tempo até o primeiro clique.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="first-click-task-card">
+      <div class="first-click-task-heading">
+        <span class="first-click-task-number">Tarefa 2</span>
+        <h4>Compartilhar o resultado de uma refeição</h4>
+      </div>
+      <p class="first-click-scenario">
+        Depois de preparar uma refeição, o participante deveria iniciar o registro do prato
+        para compartilhar o resultado com outras pessoas dentro do aplicativo.
+      </p>
+      <p class="first-click-analysis">
+        <strong>Interpretação:</strong> os cliques ficaram fortemente concentrados em
+        “Nova ação”, o que indica boa associação entre o rótulo e a intenção de registrar
+        conteúdo. A maior parte das respostas ocorreu entre 2 e 4 segundos, embora tenham
+        surgido alguns cliques alternativos no menu e em elementos do desafio.
+      </p>
+      <div class="first-click-visual-grid">
+        <figure>
+          <img src="img/first-click/tarefa-02-mapa-cliques.png"
+               alt="Mapa de calor da segunda tarefa, com forte concentração no botão Nova ação.">
+          <figcaption>Mapa de cliques da tarefa 2.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/first-click/tarefa-02-tempo.png"
+               alt="Gráfico de distribuição do tempo gasto pelos participantes na segunda tarefa.">
+          <figcaption>Distribuição do tempo até o primeiro clique.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="first-click-task-card">
+      <div class="first-click-task-heading">
+        <span class="first-click-task-number">Tarefa 3</span>
+        <h4>Criar um grupo com amigos</h4>
+      </div>
+      <p class="first-click-scenario">
+        O participante deveria imaginar que ele e alguns amigos queriam criar uma comunidade
+        própria para compartilhar receitas e acompanhar o progresso dos integrantes.
+      </p>
+      <p class="first-click-analysis">
+        <strong>Interpretação:</strong> a concentração principal ocorreu em “Criar grupo”,
+        demonstrando que a ação está visível e utiliza um vocabulário compatível com o
+        objetivo. A maioria decidiu nos primeiros 5 segundos; um caso mais demorado sugere
+        que alguns usuários ainda podem considerar o botão “Nova ação” ou outros elementos.
+      </p>
+      <div class="first-click-visual-grid">
+        <figure>
+          <img src="img/first-click/tarefa-03-mapa-cliques.png"
+               alt="Mapa de calor da terceira tarefa, com maior concentração no comando Criar grupo.">
+          <figcaption>Mapa de cliques da tarefa 3.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/first-click/tarefa-03-tempo.png"
+               alt="Gráfico de distribuição do tempo gasto pelos participantes na terceira tarefa.">
+          <figcaption>Distribuição do tempo até o primeiro clique.</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="first-click-task-card">
+      <div class="first-click-task-heading">
+        <span class="first-click-task-number">Tarefa 4</span>
+        <h4>Encontrar uma comunidade já existente</h4>
+      </div>
+      <p class="first-click-scenario">
+        O participante deveria procurar um grupo existente com objetivos compatíveis,
+        conhecer sua proposta e iniciar a exploração antes de decidir se gostaria de
+        participar.
+      </p>
+      <p class="first-click-analysis">
+        <strong>Interpretação:</strong> os cliques se distribuíram entre diferentes cards de
+        grupos e também apareceram em controles periféricos. Esse padrão é coerente com uma
+        exploração da lista, mas evidencia que os cards não apresentam uma ação explícita
+        como “Ver grupo” ou “Participar”. Alguns participantes demoraram mais de 25 segundos,
+        indicando maior incerteza nesta tarefa.
+      </p>
+      <div class="first-click-visual-grid">
+        <figure>
+          <img src="img/first-click/tarefa-04-mapa-cliques.png"
+               alt="Mapa de calor da quarta tarefa, com cliques distribuídos entre os cards de grupos e outros controles da interface.">
+          <figcaption>Mapa de cliques da tarefa 4.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/first-click/tarefa-04-tempo.png"
+               alt="Gráfico de distribuição do tempo gasto pelos participantes na quarta tarefa.">
+          <figcaption>Distribuição do tempo até o primeiro clique.</figcaption>
+        </figure>
+      </div>
+    </article>
+  </div>
+
+  <section class="first-click-conclusion" aria-labelledby="first-click-conclusion-title">
+    <h4 id="first-click-conclusion-title">Síntese dos resultados</h4>
+    <p>
+      As tarefas de encontrar uma receita, compartilhar um prato e criar um grupo apresentaram
+      pontos de concentração claros, sugerindo boa compreensão das ações principais. A tarefa
+      de explorar grupos existentes foi a mais dispersa e apresentou tempos mais altos em parte
+      das respostas. Como consequência, o redesign deve manter os rótulos claros já existentes
+      e acrescentar ações explícitas nos cards, como “Ver detalhes” e “Participar do grupo”.
+    </p>
+  </section>
+</section>
+<footer class="evaluation-footer">
+<strong>Universidade Federal Fluminense</strong>
+<span>Interface Homem-Máquina — 2026.1</span>
+</footer>
+</section>
+</a10>
+</div>
+</div>
+</body>
+</html>
