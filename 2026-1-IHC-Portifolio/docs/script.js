@@ -108,7 +108,9 @@ function initEasyChefPrototype() {
     const updateNavigationState = () => {
         bottomButtons.forEach((btn) => btn.classList.toggle("active", btn.dataset.ecView === currentView));
         drawerButtons.forEach((btn) => btn.classList.toggle("active", btn.dataset.ecView === currentView));
-        backButton.hidden = rootViews.has(currentView) && history.length <= 1;
+        if (backButton) {
+            backButton.hidden = rootViews.has(currentView) && history.length <= 1;
+        }
         fab.classList.toggle("hidden", ["actions", "nova", "cozinhar", "buscar"].includes(currentView));
     };
 
@@ -194,7 +196,7 @@ function initEasyChefPrototype() {
     hamburger.addEventListener("click", () => drawer.classList.contains("open") ? closeDrawer(true) : openDrawer());
     drawerClose.addEventListener("click", () => closeDrawer(true));
     backdrop.addEventListener("click", () => closeDrawer(true));
-    backButton.addEventListener("click", goBack);
+    backButton?.addEventListener("click", goBack);
     bell.addEventListener("click", () => setView("notificacoes"));
     fab.addEventListener("click", () => setView("actions"));
 
